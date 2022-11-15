@@ -1,18 +1,16 @@
-Name: <input type="text" name="name" value="<?php echo $name;?>">
+<?php
 
-E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+//---------------------------------------------
+// WARNING: this doesn't include sanitization
+// and validation
+//---------------------------------------------
+if (isset($_POST['name'], $_POST['email'])) {
+	$name = htmlspecialchars($_POST['name']);
+	$email = htmlspecialchars($_POST['email']);
 
-Website: <input type="text" name="website" value="<?php echo $website;?>">
-
-Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-
-Gender:
-<input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="female") echo "checked";?>
-value="female">Female
-<input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="male") echo "checked";?>
-value="male">Male
-<input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="other") echo "checked";?>
-value="other">Other
+	// show the $name and $email
+	echo "Thanks $name for your subscription.<br>";
+	echo "Please confirm it in your inbox of the email $email.";
+} else {
+	echo 'You need to provide your name and email address.';
+}
