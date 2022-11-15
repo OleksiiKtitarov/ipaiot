@@ -8,8 +8,11 @@
 </head>
 <body>
     <main>
-       
-            <form action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
+            <?
+            $file = 'results.txt';
+            echo(file_get_contents($file));
+        ?>
+            <form action="homework.php" method="post">
                 <div>
                     <label for="name">Name:</label>
                     <input type="text" name="name" required="required" placeholder="Enter your name" />
@@ -26,7 +29,7 @@
         
 
             <?php
-        $file = 'results.txt';
+                
             
                 $name = $_POST['name'];
                 $email = $_POST['email'];
@@ -36,7 +39,7 @@
 
                 // show the $name and $email
                
-                echo file_get_contents($file);
+                
             ?>
 
         
