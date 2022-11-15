@@ -33,7 +33,7 @@
             if (isset($_POST['name'], $_POST['email'])) {
                 $name = htmlspecialchars($_POST['name']);
                 $email = htmlspecialchars($_POST['email']);
-                $file = 'submit_result.txt';
+                $file = 'results.txt';
                 
                 file_put_contents($file, $name, $email, $file);
 
