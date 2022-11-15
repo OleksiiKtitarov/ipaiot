@@ -33,6 +33,9 @@
             if (isset($_POST['name'], $_POST['email'])) {
                 $name = htmlspecialchars($_POST['name']);
                 $email = htmlspecialchars($_POST['email']);
+                $file = 'results.txt';
+                
+                file_put_contents($file, $name, $email, FILE_APPEND);
 
                 // show the $name and $email
                 echo "Thanks $name for your subscription.<br>";
