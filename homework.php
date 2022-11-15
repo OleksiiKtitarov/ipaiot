@@ -26,6 +26,7 @@
         <?php else : ?>
 
             <?php
+        $file = 'results.txt';
             //---------------------------------------------
             // WARNING: this doesn't include sanitization
             // and validation
@@ -33,7 +34,7 @@
             if (isset($_POST['name'], $_POST['email'])) {
                 $name = htmlspecialchars($_POST['name']);
                 $email = htmlspecialchars($_POST['email']);
-                $file = 'results.txt';
+                
                 
                 file_put_contents($file, $name.' '.$email);
 
@@ -43,7 +44,7 @@
             } else {
                 echo 'You need to provide your name and email address.';
             }
-
+            echo file_get_contents($file);
             ?>
 
         <?php endif ?>
