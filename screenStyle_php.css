@@ -1,0 +1,262 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+
+html, body{
+    margin: 1px;
+    padding: 0;
+    background-color: #ffffff;
+
+    font-size: calc(5px + 1vw);
+
+}
+
+.article_big{
+    /*flex-direction: column;*/
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.article_news{
+
+    /*width: 80%;*/
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+}
+
+.box-shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    width: 70%;
+    padding: 20px;
+    border-radius: 40px;
+
+}
+
+
+.article1_table{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.article1_content{
+    min-height: calc(100vh - 40px);
+    flex-direction: row;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    /*text-align: -moz-right;*/
+    padding-left: 10%;
+    /*padding-right: 10%;*/
+    max-width: 80%;
+}
+.navbutt{
+    background-color: white;
+    padding: 10px;
+    margin:10px;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid mediumpurple;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transition-duration: 500ms;
+}
+.navbutt:hover{
+    background-color: mediumpurple;
+    color: white;
+}
+.active{
+    background-color: mediumpurple;
+    color: white;
+}
+
+.topnav{
+
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 40px;
+}
+.pros{
+    flex-direction: row;
+    width: 40%;
+    display:flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-content: center;
+    /*text-align: -moz-right;*/
+    padding-left: 10%;
+    /*padding-right: 10%;*/
+    max-width: 40%;
+}
+
+.cons{
+    flex-direction: row;
+    width: 80%;
+    display:flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-content: center;
+    /*text-align: -moz-right;*/
+    padding-left: 10%;
+    /*padding-right: 10%;*/
+    max-width: 80%;
+}
+
+.pers_opinion{
+    flex-direction: row;
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    /*text-align: -moz-right;*/
+    padding-left: 10%;
+    /*padding-right: 10%;*/
+    max-width: 80%;
+}
+
+.tab{
+    text-indent:38px;
+    margin-left: 2px;
+}
+
+
+@media (max-width: 600px) {
+    .topnav{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+
+.opnFrm {
+    font-size: calc(2px + 1vw);
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+#response{
+    font-size: calc(2px + 1vw);
+    height: 138px;
+    width: 183px;
+    resize: none;
+}
+
+#nickname, #name, #email{
+    font-size: calc(2px + 1vw);
+    width: 183px;
+}
+
+.response_form{
+    font-size: calc(2px + 1vw);
+    padding-bottom: 10px;
+}
+
+.buttons_form{
+    font-size: calc(2px + 1vw);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.form_input{
+    font-size: calc(2px + 1vw);
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid grey;
+}
+
+
+
+.buttons_form_class{
+    font-size: calc(2px + 1vw);
+    background-color: white;
+    padding: 10px;
+    margin:10px;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #cbbebe;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transition-duration: 300ms;
+}
+.buttons_form_class:hover{
+    font-size: calc(2px + 1vw);
+    background-color: #c7b3b3;
+    color: white;
+}
+.active{
+    font-size: calc(2px + 1vw);
+    background-color: mediumpurple;
+    color: white;
+}
+
+.radiobutton_gender{
+    font-size: calc(2px + 1vw);
+    /*margin-left: 20px;*/
+    margin-right: 20px;
+}
+
+.datalist_topics{
+    font-size: calc(2px + 1vw);
+    transform: scale(0.6);
+}
+
+
+.image_url{
+    font-size: calc(2px + 1vw);
+    /*border: 0;*/
+    outline: none;
+    width: 183px;
+    /*border-bottom: 1px solid grey;*/
+
+
+
+}
+
+@media (max-width: 400px) {
+    #response{
+        width: 60%;
+        height : auto;
+    }
+    #nickname, #name, #email {
+        width: 60%;
+        height : auto;
+    }
+    #gender_man, #gender_skip, #gender_woman{
+        width: auto;
+        height: auto;
+        transform: scale(0.6);
+    }
+    .buttons_form_class{
+        transform: scale(0.6);
+    }
+    .mustache_p_responses{
+        font-size: calc(2px + 0.5vw);
+    }
+}
