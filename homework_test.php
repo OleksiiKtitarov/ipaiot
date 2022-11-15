@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/screenStyle_php.css">
+    <link rel="stylesheet" href="screenStyle_php.css">
     <title>PHP Form</title>
 </head>
 <body>
