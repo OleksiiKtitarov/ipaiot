@@ -35,7 +35,7 @@
                 $email = htmlspecialchars($_POST['email']);
                 $file = 'results.txt';
                 
-                file_put_contents($file, $name, $email);
+                file_put_contents($file, $name.' '.$email);
 
                 // show the $name and $email
                 echo "Thanks $name for your subscription.<br>";
