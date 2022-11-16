@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="screenStyle_php.css">
+    <link rel="stylesheet" href="css/screenStyle_php.css">
     <title>PHP Form</title>
 </head>
 <body>
@@ -17,59 +17,63 @@
                    <div>
                        <label for="name">Name:</label>
                        <input type="text" name="name" required="required" placeholder="First name" />
-                       
-                       <label for="name">Surname:</label>
+
+                       <label for="surname">Surname:</label>
                        <input type="text" name="surname" required="required" placeholder="Last Name" />
                    </div>
-   
+
                    <div>
-                       <label for="name">Email:</label>
-                           <input type="mail" name="mail" required="required" placeholder="your@email" />    
+                       <label for="email">Email:</label>
+                           <input type="mail" name="mail" required="required" placeholder="your@email" />
                    </div>
-   
+
                    <div>
-                       <label for="name">Phone:</label>
-                           <input type="phone" name="phone" placeholder="your phone" />    
+                       <label for="phone">Phone:</label>
+                           <input type="phone" name="phone" placeholder="your phone" />
                    </div>
-   
+
                    <div>
-                       <label for="name">Topic:</label>
-                           <input type="text" name="topic" required="required" placeholder="Topic of the message" />    
+                       <input list="topics"  class="datalist_topics" name="Key words" id="key_words" placeholder="Choose topic">
+                                       <datalist id="topics">
+                                           <option value="Page trouble">
+                                           <option value="Suggestion">
+                                           <option value="Improvement">
+                                       </datalist>
                    </div>
-   
+
                    <div>
-                       <label for="name">Message:</label>
-                           <input type="text" name="message" required="required" placeholder="Topic of the message" />    
+                       <label for="message">Message:</label>
+                           <textarea name="response" id="message" placeholder="Your response"></textarea><br>
                    </div>
-   
-                   <div>
-                       <label for="name">Email:</label>
-                       <input type="email" name="email" required="required" placeholder="Enter your email" />
-                   </div>
-   
-                   <input type="submit" value="Submit">
-                    
+
+                   <button type="submit" class="buttons_form_class">Send</button>
+
             </div>
-                
+
 
             </form>
-        
+
 
             <?php
-                
-            
+
+
                 $name = $_POST['name'];
+                $surname = $_POST['surname'];
+                $phone = $_POST['phone'];
                 $email = $_POST['email'];
-                
-                
-                file_put_contents($file, $name.' '.$email);
+                $topics = $_POST['topics'];
+                $message = $_POST['message'];
+
+
+
+                file_put_contents($file, $name.' '.$surname.' '.$phone' '.$email.' '.$topics, $message);
 
                 // show the $name and $email
-               
-                
+
+
             ?>
 
-        
+
     </main>
 </body>
 
