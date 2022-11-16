@@ -16,10 +16,10 @@
         <div class="box-shadow">
             <div>
                 <label for="name">Name:</label>
-                <input type="text" name="name" required="required" placeholder="First name" />
+                <input type="text" name="name" required="required" placeholder="First name" /><br>
 
                 <label for="surname">Surname:</label>
-                <input type="text" name="surname" required="required" placeholder="Last Name" />
+                <input type="text" name="surname" required="required" placeholder="Last Name" /><br>
             </div>
 
             <div>
