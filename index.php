@@ -26,11 +26,11 @@
 
                 <div>
                     <label for="phone">Phone:</label>
-                    <input class="form_input" type="phone" name="phone" placeholder="your phone" />
+                    <input class="form_input" type="number" name="phone" placeholder="your phone" />
                 </div>
 
                 <div>
-                    <input list="topics"  class="datalist_topics" name="Key words" id="key_words" placeholder="Choose topic">
+                    <input type="text"  class="datalist_topics" name="Key words" id="key_words" placeholder="Choose topic">
                     <datalist id="topics">
                         <option value="Page trouble">
                         <option value="Suggestion">
@@ -59,7 +59,7 @@
             </div>
         </div>
     </div>
-    
+
 
 
 
