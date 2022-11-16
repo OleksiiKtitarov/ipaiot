@@ -12,32 +12,19 @@
         <div class=article_news">
             <div class="box-shadow">
                 <h1 style="text-align: center">Leave your response</h1>
-                <div style="align-content: center">
-<!--                    <br><label for="name">Name:</label>-->
-                    <br><input class="form_input" type="text" name="name" required="required" placeholder="Name" />
+                <br><input class="form_input" type="text" name="name" required="required" placeholder="Name" />
 
-<!--                    <br><label for="surname">Surname:</label>-->
-                    <br><input class="form_input" type="text" name="surname" required="required" placeholder="Surname" /><br>
-                </div>
+                <!--                    <br><label for="surname">Surname:</label>-->
+                <br><input class="form_input" type="text" name="surname" required="required" placeholder="Surname" /><br>
 
-                <div>
-<!--                    <label for="name">Email:</label>-->
-                    <input class="form_input" type="email" name="email" required="required" placeholder="your@email" />
-                </div>
+                <input class="form_input" type="email" name="email" required="required" placeholder="your@email" />
 
-                <div>
-<!--                    <label for="phone">Phone:</label>-->
-                    <input class="form_input" type="text" name="phone" placeholder="your phone" />
-                </div>
+                <input class="form_input" type="text" name="phone" placeholder="your phone" />
 
-                <div>
-                    <input type="text"  class="datalist_topics" name="Key words" id="topics" placeholder="Choose topic">
-                </div>
+                <input type="text"  class="datalist_topics" name="Key words" id="topics" placeholder="Choose topic">
 
-                <div>
-<!--                    <label for="message">Message:</label>-->
-                    <textarea name="response" id="response" placeholder="Your response"></textarea><br>
-                </div>
+
+                <textarea name="response" id="response" placeholder="Your response"></textarea><br>
 
                 <button type="submit" class="buttons_form_class">Send</button>
 
