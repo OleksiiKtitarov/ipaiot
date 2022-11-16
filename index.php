@@ -66,7 +66,7 @@
             $topic = $_POST['topic'];
             $message = $_POST['message'];
 
-            file_put_contents($file, $name.' '.$surname.' '.$email.' '.$phone.' '.$topic, $message);
+            file_put_contents($file, $name.' '.$surname.' '.$email);
 
                 // show the $name and $email
                
