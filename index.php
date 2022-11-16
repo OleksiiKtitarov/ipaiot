@@ -8,10 +8,6 @@
 </head>
 <body>
 <main>
-    <?
-    $file = 'results.txt';
-    echo("Last enterred information 4".file_get_contents($file));
-    ?>
     <form method="post">
         <div class="box-shadow">
             <div>
@@ -53,6 +49,11 @@
 
     </form>
 
+    <?
+    $file = 'results.txt';
+    echo("Last enterred information 4".file_get_contents($file));
+    ?>
+
 
     <?php
 
@@ -68,10 +69,10 @@
 
     file_put_contents($file, $name.' '.$surname.' '.$topics.' '.$phone.' '.$email);
 
-                // show the $name and $email
+    // show the $name and $email
 
 
-            ?>
+    ?>
 
 
 </main>
