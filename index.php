@@ -59,12 +59,14 @@
                 
             
 
-                $name = $_POST['name'];
-                $surname = $_POST['surname'];
-                $email = $_POST['email'];
+            $name = $_POST['name'];
+            $surname = $_POST['surname'];
+            $email = $_POST['email'];
+            $phone = $_POST['phone'];
+            $topic = $_POST['topic'];
+            $message = $_POST['message'];
 
-                
-                file_put_contents($file, $name.' '.$surname.' '.$email);
+            file_put_contents($file, $name.' '.$surname.' '.$email.' '.$phone.' '.$topic, $message);
 
                 // show the $name and $email
                
