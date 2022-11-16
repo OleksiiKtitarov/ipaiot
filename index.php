@@ -11,26 +11,27 @@
     <form class="opnFrm" method="post">
         <div class=article_news">
             <div class="box-shadow">
+                <h1 style="text-align: center">Leave your response</h1>
                 <div style="align-content: center">
 <!--                    <br><label for="name">Name:</label>-->
-                    <br><input class="form_input" type="text" name="name" required="required" placeholder="First name" />
+                    <br><input class="form_input" type="text" name="name" required="required" placeholder="Name" />
 
 <!--                    <br><label for="surname">Surname:</label>-->
-                    <br><input class="form_input" type="text" name="surname" required="required" placeholder="Last Name" /><br>
+                    <br><input class="form_input" type="text" name="surname" required="required" placeholder="Surname" /><br>
                 </div>
 
                 <div>
 <!--                    <label for="name">Email:</label>-->
-                    <input class="form_input" type="email" name="email" required="required" placeholder="Enter your email" />
+                    <input class="form_input" type="email" name="email" required="required" placeholder="your@email" />
                 </div>
 
                 <div>
 <!--                    <label for="phone">Phone:</label>-->
-                    <input class="form_input" type="number" name="phone" placeholder="your phone" />
+                    <input class="form_input" type="text" name="phone" placeholder="your phone" />
                 </div>
 
                 <div>
-                    <input type="text"  class="datalist_topics" name="Key words" id="key_words" placeholder="Choose topic">
+                    <input type="text"  class="datalist_topics" name="Key words" id="topics" placeholder="Choose topic">
                 </div>
 
                 <div>
