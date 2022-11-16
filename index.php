@@ -13,7 +13,7 @@
             <div class="box-shadow">
                 <div>
                     <br><label for="name">Name:</label>
-                    <input class="form_input" type="text" name="name" required="required" placeholder="First name" /><br>
+                    <input class="form_input" type="text" name="name" required="required" placeholder="First name" />
 
                     <label for="surname">Surname:</label>
                     <input class="form_input" type="text" name="surname" required="required" placeholder="Last Name" /><br>
@@ -47,17 +47,19 @@
 
             </div>
         </div>
-        
-    </form>
 
-    <div class="box-shadow">
-        <div>
-            <?
-            $file = 'results.txt';
-            echo("Last entered information 4 :\n".file_get_contents($file));
-            ?>
+    </form>
+    <div class=article_news">
+        <div class="box-shadow">
+            <div>
+                <?
+                $file = 'results.txt';
+                echo("Last entered information 4 :\n".file_get_contents($file));
+                ?>
+            </div>
         </div>
     </div>
+    
 
 
 
