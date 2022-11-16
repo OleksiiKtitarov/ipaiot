@@ -10,7 +10,7 @@
     <main>
             <?
             $file = 'results.txt';
-            echo("Last enterred information".file_get_contents($file));
+            echo("Last enterred information ".file_get_contents($file));
         ?>
             <form  method="post">
             <div class="box-shadow">
@@ -58,11 +58,13 @@
             <?php
                 
             
+
                 $name = $_POST['name'];
+                $surname = $_POST['surname'];
                 $email = $_POST['email'];
+
                 
-                
-                file_put_contents($file, $name.' '.$email);
+                file_put_contents($file, $name.' '.$surname.' '.$email);
 
                 // show the $name and $email
                
