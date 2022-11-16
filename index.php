@@ -9,50 +9,56 @@
 <body>
 <main>
     <form method="post">
-        <div class="box-shadow">
-            <div>
-                <br><label for="name">Name:</label>
-                <input type="text" name="name" required="required" placeholder="First name" /><br>
+        <div class=article_news">
+            <div class="box-shadow">
+                <div>
+                    <br><label for="name">Name:</label>
+                    <input class="form_input" type="text" name="name" required="required" placeholder="First name" /><br>
 
-                <label for="surname">Surname:</label>
-                <input type="text" name="surname" required="required" placeholder="Last Name" /><br>
+                    <label for="surname">Surname:</label>
+                    <input class="form_input" type="text" name="surname" required="required" placeholder="Last Name" /><br>
+                </div>
+
+                <div>
+                    <label for="name">Email:</label>
+                    <input class="form_input" type="email" name="email" required="required" placeholder="Enter your email" />
+                </div>
+
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input class="form_input" type="phone" name="phone" placeholder="your phone" />
+                </div>
+
+                <div>
+                    <input list="topics"  class="datalist_topics" name="Key words" id="key_words" placeholder="Choose topic">
+                    <datalist id="topics">
+                        <option value="Page trouble">
+                        <option value="Suggestion">
+                        <option value="Improvement">
+                    </datalist>
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea name="response" id="message" placeholder="Your response"></textarea><br>
+                </div>
+
+                <button type="submit" class="buttons_form_class">Send</button>
+
             </div>
-
-            <div>
-                <label for="name">Email:</label>
-                <input type="email" name="email" required="required" placeholder="Enter your email" />
-            </div>
-
-            <div>
-                <label for="phone">Phone:</label>
-                <input type="phone" name="phone" placeholder="your phone" />
-            </div>
-
-            <div>
-                <input list="topics"  class="datalist_topics" name="Key words" id="key_words" placeholder="Choose topic">
-                <datalist id="topics">
-                    <option value="Page trouble">
-                    <option value="Suggestion">
-                    <option value="Improvement">
-                </datalist>
-            </div>
-
-            <div>
-                <label for="message">Message:</label>
-                <textarea name="response" id="message" placeholder="Your response"></textarea><br>
-            </div>
-
-            <button type="submit" class="buttons_form_class">Send</button>
-
         </div>
-
-
+        
     </form>
 
-    <?
-    $file = 'results.txt';
-    echo("Last enterred information 4".file_get_contents($file));
-    ?>
+    <div class="box-shadow">
+        <div>
+            <?
+            $file = 'results.txt';
+            echo("Last entered information 4 ".file_get_contents($file));
+            ?>
+        </div>
+    </div>
+
 
 
     <?php
