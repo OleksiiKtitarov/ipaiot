@@ -8,42 +8,54 @@
 </head>
 <body>
 <main>
-    <?
-    $file = 'results.txt';
-    echo("Last entered information 4 : ".file_get_contents($file));
-    ?>
-    
-    <div class="article_news">
+    <form class="opnFrm" method="post">
+        <div class=article_news">
+            <div class="box-shadow">
+                <div style="align-content: center">
+                    <br><label for="name">Name:</label>
+                    <input class="form_input" type="text" name="name" required="required" placeholder="First name" />
 
-        <div class="box-shadow">
-            <div style="">
-                <h1 style="text-align: center">Leave your response</h1>
-                <form id="opnFrm" class="opnFrm" method="post">
+                    <br><label for="surname">Surname:</label>
+                    <input class="form_input" type="text" name="surname" required="required" placeholder="Last Name" /><br>
+                </div>
 
-                    <input type="text" name="nick" id="nickname" placeholder="Nick" class="form_input"><br>
-                    <input type="text" name="name" id="name" placeholder="Name" class="form_input"><br>
-                    <input type="text" name="surname" id="surname" placeholder="Surname" class="form_input"><br>
-                    <input type="email" name="email" id="email" placeholder="your@mail" class="form_input"><br>
-                    <input type="text" name="number" id="number" placeholder="your number" class="form_input"><br>
+                <div>
+                    <label for="name">Email:</label>
+                    <input class="form_input" type="email" name="email" required="required" placeholder="Enter your email" />
+                </div>
 
-                    <input type="text"  class="datalist_topics" name="Key words" id="topics" placeholder="Choose topic">
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input class="form_input" type="number" name="phone" placeholder="your phone" />
+                </div>
 
+                <div>
+                    <input type="text"  class="datalist_topics" name="Key words" id="key_words" placeholder="Choose topic">
+                    <datalist id="topics">
+                        <option value="Page trouble">
+                        <option value="Suggestion">
+                        <option value="Improvement">
+                    </datalist>
+                </div>
 
-                    <div class="response_form">
-                        <textarea name="response" id="response" placeholder="Your response"></textarea><br>
-                    </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea name="response" id="message" placeholder="Your response"></textarea><br>
+                </div>
 
-                    <div class="buttons_form">
-                        <button type="submit" class="buttons_form_class">Send</button>
-                    </div>
-                </form>
+                <button type="submit" class="buttons_form_class">Send</button>
+
             </div>
         </div>
-    </div>
-    <div class=article_news">
+
+    </form>
+    <br><div class=article_news">
         <div class="box-shadow">
             <div>
-                
+                <?
+                $file = 'results.txt';
+                echo("Last entered information 4 :\n".file_get_contents($file));
+                ?>
             </div>
         </div>
     </div>
@@ -56,14 +68,14 @@
 
     $name = $_POST['name'];
     $surname = $_POST['surname'];
-    $phone = $_POST['number'];
+    $phone = $_POST['phone'];
     $email = $_POST['email'];
     $topics = $_POST['topics'];
     $message = $_POST['message'];
 
 
 
-    file_put_contents($file, $name.' '.$surname);
+    file_put_contents($file, $name.' '.$surname.' '.$topics.' '.$phone.' '.$email);
 
     // show the $name and $email
 
