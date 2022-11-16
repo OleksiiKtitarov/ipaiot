@@ -10,7 +10,7 @@
     <main>
             <?
             $file = 'results.txt';
-            echo("Last enterred information ".file_get_contents($file));
+            echo("Last enterred information 1 ".file_get_contents($file));
         ?>
             <form  method="post">
             <div class="box-shadow">
