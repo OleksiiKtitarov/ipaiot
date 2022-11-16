@@ -11,11 +11,11 @@
     <form method="post">
         <div class=article_news">
             <div class="box-shadow">
-                <div>
+                <div style="align-content: center">
                     <br><label for="name">Name:</label>
                     <input class="form_input" type="text" name="name" required="required" placeholder="First name" />
 
-                    <label for="surname">Surname:</label>
+                    <br><label for="surname">Surname:</label>
                     <input class="form_input" type="text" name="surname" required="required" placeholder="Last Name" /><br>
                 </div>
 
