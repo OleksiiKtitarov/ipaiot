@@ -10,7 +10,7 @@
     <main>
             <?
             $file = 'results.txt';
-            echo("Last enterred information 2 ".file_get_contents($file));
+            echo("Last enterred information 01 ".file_get_contents($file));
         ?>
             <form  method="post">
             <div class="box-shadow">
@@ -61,7 +61,7 @@
 
             $name = $_POST['name'];
             $surname = $_POST['surname'];
-            $email = $_POST['email'];
+            $mail = $_POST['email'];
             $phone = $_POST['phone'];
             $topic = $_POST['topic'];
             $message = $_POST['message'];
