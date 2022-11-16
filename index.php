@@ -33,7 +33,7 @@
                    </div>
 
                    <div>
-                       <input list="topics"  class="datalist_topics" name="Key words" id="key_words" placeholder="Choose topic">
+                       <input list="topics"  class="datalist_topics" name="Key words" id="topics" placeholder="Choose topic">
                                        <datalist id="topics">
                                            <option value="Page trouble">
                                            <option value="Suggestion">
