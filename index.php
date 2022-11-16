@@ -49,7 +49,7 @@
         </div>
 
     </form>
-    <div class=article_news">
+    <br><div class=article_news">
         <div class="box-shadow">
             <div>
                 <?
