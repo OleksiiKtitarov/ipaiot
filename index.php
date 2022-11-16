@@ -8,6 +8,11 @@
 </head>
 <body>
 <main>
+    <?
+    $file = 'results.txt';
+    echo("Last entered information 4 :\n".file_get_contents($file));
+    ?>
+    
     <div class="article_news">
 
         <div class="box-shadow">
@@ -22,7 +27,7 @@
                     <input type="text" name="number" id="number" placeholder="your number" class="form_input"><br>
 
                     <input type="text"  class="datalist_topics" name="Key words" id="topics" placeholder="Choose topic">
-                    
+
 
                     <div class="response_form">
                         <textarea name="response" id="response" placeholder="Your response"></textarea><br>
@@ -38,10 +43,7 @@
     <br><div class=article_news">
         <div class="box-shadow">
             <div>
-                <?
-                $file = 'results.txt';
-                echo("Last entered information 4 :\n".file_get_contents($file));
-                ?>
+                
             </div>
         </div>
     </div>
