@@ -7,7 +7,9 @@ html, body{
     margin: 1px;
     padding: 0;
     background-color: #ffffff;
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     font-size: calc(5px + 1vw);
 
 }
@@ -234,9 +236,6 @@ html, body{
     outline: none;
     width: 183px;
     /*border-bottom: 1px solid grey;*/
-
-
-
 }
 
 @media (max-width: 400px) {
