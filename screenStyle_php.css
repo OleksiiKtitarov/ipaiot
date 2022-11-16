@@ -7,15 +7,17 @@ html, body{
     margin: 1px;
     padding: 0;
     background-color: #ffffff;
-    
+
     font-size: calc(5px + 1vw);
 
-}
-
-main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+}
+
+.main{
+
 }
 
 .article_big{
