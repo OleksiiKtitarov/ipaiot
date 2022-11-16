@@ -10,7 +10,7 @@
 <main>
     <?
     $file = 'results.txt';
-    echo("Last entered information 4 :\n".file_get_contents($file));
+    echo("Last entered information 4 : ".file_get_contents($file));
     ?>
     
     <div class="article_news">
