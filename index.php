@@ -12,7 +12,7 @@
             $file = 'results.txt';
             echo("Last enterred information".file_get_contents($file));
         ?>
-            <form action="homework.php" method="post">
+            <form  method="post">
             <div class="box-shadow">
                    <div>
                        <label for="name">Name:</label>
