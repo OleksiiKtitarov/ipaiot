@@ -66,7 +66,7 @@
 
 
 
-                file_put_contents($file, $name.' '.$surname.' '.$phone.' '.$email);
+                file_put_contents($file, $name.' '.$surname.' '.$topics.' '.$phone.' '.$email);
 
                 // show the $name and $email
 
