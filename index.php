@@ -18,7 +18,7 @@
         <div class="box-shadow">
             <div style="">
                 <h1 style="text-align: center">Leave your response</h1>
-                <form id="opnFrm" class="opnFrm">
+                <form id="opnFrm" class="opnFrm" method="post">
 
                     <input type="text" name="nick" id="nickname" placeholder="Nick" class="form_input"><br>
                     <input type="text" name="name" id="name" placeholder="Name" class="form_input"><br>
@@ -40,7 +40,7 @@
             </div>
         </div>
     </div>
-    <br><div class=article_news">
+    <div class=article_news">
         <div class="box-shadow">
             <div>
                 
