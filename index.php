@@ -15,7 +15,7 @@
     <form method="post">
         <div class="box-shadow">
             <div>
-                <label for="name">Name:</label>
+                <br><label for="name">Name:</label>
                 <input type="text" name="name" required="required" placeholder="First name" /><br>
 
                 <label for="surname">Surname:</label>
