@@ -42,10 +42,10 @@
                            <input type="text" name="message" required="required" placeholder="Topic of the message" />    
                    </div>
    
-                   <div>
+<!--                    <div>
                        <label for="name">Email:</label>
                        <input type="email" name="email" required="required" placeholder="Enter your email" />
-                   </div>
+                   </div> -->
    
                    <input type="submit" value="Submit">
                     
