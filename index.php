@@ -45,7 +45,7 @@
 </div>
     
 
-<br><div class=article_news">
+<div class=article_news">
     <div class="box-shadow">
         <div>
             <?
