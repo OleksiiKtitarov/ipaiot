@@ -70,5 +70,14 @@ $topics = $_POST['topics'];
 $message = $_POST['message'];
 
 
+
+file_put_contents($file, $name.' '.$surname.' '.$topics.' '.$phone.' '.$email);
+
+// show the $name and $email
+
+
+?>
+
+
 </body>
 </html>
