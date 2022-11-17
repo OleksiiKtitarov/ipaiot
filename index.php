@@ -8,14 +8,14 @@
 </head>
 <body>
 <main>
-    <form class="opnFrm" method="post">
+    <form id="opnFrm" class="opnFrm" method="post">
         <div class=article_news">
             <div class="box-shadow">
                 <h1 style="text-align: center">Leave your response here</h1>
                 <input class="form_input" type="text" name="name" required="required" placeholder="Name" /><br>
 
                 <!--                    <br><label for="surname">Surname:</label>-->
-                <<input class="form_input" type="text" name="surname" required="required" placeholder="Surname" /><br>
+                <input class="form_input" type="text" name="surname" required="required" placeholder="Surname" /><br>
 
                 <input class="form_input" type="email" name="email" required="required" placeholder="your@email" /><br>
 
