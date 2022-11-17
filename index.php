@@ -12,14 +12,14 @@
         <div class=article_news">
             <div class="box-shadow">
                 <h1 style="text-align: center">Leave your response</h1>
-                <br><input class="form_input" type="text" name="name" required="required" placeholder="Name" />
+                <input class="form_input" type="text" name="name" required="required" placeholder="Name" /><br>
 
                 <!--                    <br><label for="surname">Surname:</label>-->
-                <br><input class="form_input" type="text" name="surname" required="required" placeholder="Surname" /><br>
+                <<input class="form_input" type="text" name="surname" required="required" placeholder="Surname" /><br>
 
-                <input class="form_input" type="email" name="email" required="required" placeholder="your@email" />
+                <input class="form_input" type="email" name="email" required="required" placeholder="your@email" /><br>
 
-                <input class="form_input" type="text" name="phone" placeholder="your phone" />
+                <input class="form_input" type="text" name="phone" placeholder="your phone" /><br>
 
                 <input type="text"  class="datalist_topics" name="Key words" id="topics" placeholder="Choose topic">
 
