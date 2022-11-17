@@ -12,7 +12,8 @@ html, body{
 
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 .main{
@@ -96,45 +97,6 @@ html, body{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     border-radius: 40px;
 }
-.pros{
-    flex-direction: row;
-    width: 40%;
-    display:flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    align-content: center;
-    /*text-align: -moz-right;*/
-    padding-left: 10%;
-    /*padding-right: 10%;*/
-    max-width: 40%;
-}
-
-.cons{
-    flex-direction: row;
-    width: 80%;
-    display:flex;
-    justify-content: right;
-    flex-wrap: wrap;
-    align-content: center;
-    /*text-align: -moz-right;*/
-    padding-left: 10%;
-    /*padding-right: 10%;*/
-    max-width: 80%;
-}
-
-.pers_opinion{
-    flex-direction: row;
-    width: 80%;
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    /*text-align: -moz-right;*/
-    padding-left: 10%;
-    /*padding-right: 10%;*/
-    max-width: 80%;
-}
-
 .tab{
     text-indent:38px;
     margin-left: 2px;
@@ -242,6 +204,16 @@ html, body{
     width: 183px;
     /*border-bottom: 1px solid grey;*/
 }
+
+
+/*.main_css{*/
+/*    flex-direction: column;*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-wrap: wrap;*/
+/*    align-content: center;*/
+/*}*/
 
 @media (max-width: 400px) {
     #response{
