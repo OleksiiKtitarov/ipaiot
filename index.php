@@ -17,7 +17,7 @@
             <h1 style="text-align: center">Leave your response</h1>
             <form id="opnFrm" class="opnFrm" method="post">
                 <div>
-                    <input type="text" name="nick" id="nickname" placeholder="Nick" class="form_input"><br>
+                    <input type="text" name="nick" id="nick" placeholder="Nick" class="form_input"><br>
                     <input type="text" name="name" id="name" placeholder="Name" class="form_input"><br>
                     <input type="text" name="surname" id="surname" placeholder="Surname" class="form_input"><br>
                     <input type="email" name="email" id="email" placeholder="your@mail" class="form_input"><br>
@@ -61,7 +61,7 @@
 
 <?php
 
-$nick = $_POST['nickname'];
+$nick = $_POST['nick'];
 $name = $_POST['name'];
 $surname = $_POST['surname'];
 $phone = $_POST['phone'];
