@@ -152,6 +152,7 @@ html, body{
 .form_input{
     font-size: calc(2px + 1vw);
     border: 0;
+    margin-bottom: 20px;
     outline: none;
     border-bottom: 1px solid grey;
 }
