@@ -43,6 +43,31 @@
         </div>
     </div>
 </div>
+    
+
+<br><div class=article_news">
+    <div class="box-shadow">
+        <div>
+            <?
+            $file = 'results.txt';
+            echo("Last entered information 4 :\n".file_get_contents($file));
+            ?>
+        </div>
+    </div>
+</div>
+
+
+
+
+<?php
+
+
+$name = $_POST['name'];
+$surname = $_POST['surname'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
+$topics = $_POST['topics'];
+$message = $_POST['message'];
 
 
 </body>
