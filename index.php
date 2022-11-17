@@ -66,7 +66,7 @@ $name = $_POST['name'];
 $surname = $_POST['surname'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
-$topics = $_POST['key_words'];
+$topics = $_POST['topicss'];
 $message = $_POST['message'];
 $response = $_POST['response'];
 
