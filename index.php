@@ -61,18 +61,18 @@
 
 <?php
 
-
+$nick = $_POST['nickname'];
 $name = $_POST['name'];
 $surname = $_POST['surname'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
-$topics = $_POST['topicss'];
+$topics = $_POST['key_words'];
 $message = $_POST['message'];
 $response = $_POST['response'];
 
 
 
-file_put_contents($file, $name.' '.$surname.' '.$topics.' '.$phone.' '.$email.'\r\n'.$response);
+file_put_contents($file, $nick.' '.$name.' '.$surname.' '.$topics.' '.$phone.' '.$email, $response);
 
 // show the $name and $email
 
