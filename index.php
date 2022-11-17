@@ -1,72 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css"  media="print" href="public/css/printStyle.css" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="screenStyle_php.css">
-    <title>PHP Form</title>
+    <title>All articles</title>
+    <link rel="stylesheet" href="screenStyle.css">
+
+    <link rel="shortcut icon" href="fig/T.svg" type="image/x-icon">
 </head>
 <body>
-<main>
-    <form id="opnFrm" class="opnFrm" method="post">
-        <div class=article_news">
-            <div class="box-shadow">
-                <h1 style="text-align: center">Leave your response here</h1>
-                <input class="form_input" type="text" name="name" required="required" placeholder="Name" /><br>
-
-                <!--                    <br><label for="surname">Surname:</label>-->
-                <input class="form_input" type="text" name="surname" required="required" placeholder="Surname" /><br>
-
-                <input class="form_input" type="email" name="email" required="required" placeholder="your@email" /><br>
-
-                <input class="form_input" type="text" name="phone" placeholder="your phone" /><br>
-
-                <input type="text"  class="datalist_topics" name="Key words" id="topics" placeholder="Choose topic">
 
 
-                <textarea name="response" id="response" placeholder="Your response"></textarea><br>
+<div class="article_news">
 
-                <button type="submit" class="buttons_form_class">Send</button>
+    <div class="box-shadow">
+        <div style="">
+            <h1 style="text-align: center">Leave your response</h1>
+            <form id="opnFrm" class="opnFrm" method="post">
+                <div>
+                    <input type="text" name="nick" id="nickname" placeholder="Nick" class="form_input"><br>
+                    <input type="text" name="name" id="name" placeholder="Name" class="form_input"><br>
+                    <input type="text" name="surname" id="surname" placeholder="Surname" class="form_input"><br>
+                    <input type="email" name="email" id="email" placeholder="your@mail" class="form_input"><br>
+                    <input type="text" name="number" id="number" placeholder="your number" class="form_input"><br>
 
-            </div>
-        </div>
+                    <input list="topics"  class="datalist_topics" name="Key words" id="key_words" placeholder="Choose topic">
+                    <datalist id="topics">
+                        <option value="Page trouble">
+                        <option value="Suggestions">
+                        <option value="Improvements">
+                    </datalist>
 
-    </form>
-    <br><div class=article_news">
-        <div class="box-shadow">
-            <div>
-                <?
-                $file = 'results.txt';
-                echo("Last entered information 4 :\n".file_get_contents($file));
-                ?>
-            </div>
+                    <div class="response_form">
+                        <textarea name="response" id="response" placeholder="Your response"></textarea><br>
+                    </div>
+
+                    <div class="buttons_form">
+                        <button type="submit" class="buttons_form_class">Send</button>
+                    </div>
+                </div>
+                
+            </form>
         </div>
     </div>
+</div>
 
 
-
-
-    <?php
-
-
-    $name = $_POST['name'];
-    $surname = $_POST['surname'];
-    $phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $topics = $_POST['topics'];
-    $message = $_POST['message'];
-
-
-
-    file_put_contents($file, $name.' '.$surname.' '.$topics.' '.$phone.' '.$email);
-
-    // show the $name and $email
-
-
-    ?>
-
-
-</main>
 </body>
-
 </html>
