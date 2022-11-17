@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css"  media="print" href="public/css/printStyle.css" />
     <meta charset="UTF-8">
     <title>All articles</title>
-    <link rel="stylesheet" href="screenStyle.css">
+    <link rel="stylesheet" href="screenStyle_php.css">
 
     <link rel="shortcut icon" href="fig/T.svg" type="image/x-icon">
 </head>
