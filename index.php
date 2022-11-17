@@ -49,7 +49,7 @@
     <div class="box-shadow">
         <div>
             <?
-            $file = 'results.txt';
+            $file = 'result.txt';
             echo("Last entered information 4 :\n".file_get_contents($file));
             ?>
         </div>
