@@ -11,7 +11,7 @@
     <form class="opnFrm" method="post">
         <div class=article_news">
             <div class="box-shadow">
-                <h1 style="text-align: center">Leave your response</h1>
+                <h1 style="text-align: center">Leave your response here</h1>
                 <input class="form_input" type="text" name="name" required="required" placeholder="Name" /><br>
 
                 <!--                    <br><label for="surname">Surname:</label>-->
