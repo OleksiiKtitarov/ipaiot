@@ -23,7 +23,7 @@
                     <input type="email" name="email" id="email" placeholder="your@mail" class="form_input"><br>
                     <input type="text" name="number" id="number" placeholder="your number" class="form_input"><br>
 
-                    <input list="topics"  class="datalist_topics" name="Key words" id="key_words" placeholder="Choose topic">
+                    <input list="topics"  class="datalist_topics" name="Key words" id="topicss" placeholder="Choose topic">
                     <datalist id="topics">
                         <option value="Page trouble">
                         <option value="Suggestions">
@@ -66,13 +66,13 @@ $name = $_POST['name'];
 $surname = $_POST['surname'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
-$topics = $_POST['key_words'];
+$topics = $_POST['topicss'];
 $message = $_POST['message'];
 $response = $_POST['response'];
 
 
 
-file_put_contents($file, $name.' '.$surname.' '.$topics.' '.$phone.' '.$email.'\n'.$response);
+file_put_contents($file, $name.' '.$surname.' '.$topics.' '.$phone.' '.$email.'\r\n'.$response);
 
 // show the $name and $email
 
