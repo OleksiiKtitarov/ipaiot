@@ -51,7 +51,7 @@
             $file = 'result.txt';
             $lines = file($file);//file in to an array
 
-<!--            echo("Last entered information 4 :\n".file_get_contents($file));-->
+//<!--            echo("Last entered information 4 :\n".file_get_contents($file));-->
 
 
             $file_nick = 'nick.txt';
@@ -109,7 +109,7 @@ file_put_contents($file_number, '$number');
 
 file_put_contents($file_email, '$email');
 
-file_put_contents($file_topic, '$topic');
+file_put_contents($file_topicss, '$topic');
 
 file_put_contents($file_message, '$message');
 
