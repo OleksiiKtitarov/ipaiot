@@ -57,40 +57,40 @@
             $file_nick = 'nick.txt';
             $lines_nick = file($file_nick);//file in to an array
                            
-            echo "Last entered information 0 :\n".file_get_contents($file);
+//             echo "Last entered information 0 :\n".file_get_contents($file);
                            
-            echo "Last entered information 1 :\n".file_get_contents($file_nick)."<br>\n";
+            echo " ".file_get_contents($file_nick)."<br>\n";
 
             $file_name = 'name.txt';
             $lines_name = file($file_name);//file in to an array
 
-            echo "Last entered information 2 :\n".file_get_contents($file_name)."<br>\n";        
+            echo " ".file_get_contents($file_name)."<br>\n";        
                            
             $file_surname = 'surname.txt';
             $lines_surname = file($file_surname);//file in to an array
                            
-            echo "Last entered information 3 :\n".file_get_contents($file_surname)."<br>\n";
+            echo " ".file_get_contents($file_surname)."<br>\n";
                            
             $file_number = 'number.txt';
             $lines_number = file($file_number);//file in to an array
-            echo "Last entered information 4 :\n".file_get_contents($file_number)."<br>\n";
+            echo " ".file_get_contents($file_number)."<br>\n";
                            
 
             $file_email = 'email.txt';
             $lines_email = file($file_email);//file in to an array
-            echo "Last entered information 5 :\n".file_get_contents($file_email)."<br>\n";
+            echo " ".file_get_contents($file_email)."<br>\n";
 
             $file_topicss = 'topicss.txt';
             $lines_topicss = file($file_topicss);//file in to an array
-            echo "Last entered information 6 :\n".file_get_contents($file_topicss)."<br>\n";
+            echo " ".file_get_contents($file_topicss)."<br>\n";
 
-            $file_message = 'message.txt';
-            $lines_message = file($file_message);//file in to an array
-            echo "Last entered information 7 :\n".file_get_contents($file_message)."<br>\n";
+//             $file_message = 'message.txt';
+//             $lines_message = file($file_message);//file in to an array
+//             echo "Last entered information 7 :\n".file_get_contents($file_message)."<br>\n";
 
             $file_response = 'response.txt';
             $lines_response = file($file_response);//file in to an array
-            echo "Last entered information 8 :\n".file_get_contents($file_response)."<br>\n";
+            echo " ".file_get_contents($file_response)."<br>\n";
             ?>
         </div>
     </div>
@@ -107,7 +107,7 @@ $surname = $_POST['surname'];
 $number = $_POST['number'];
 $email = $_POST['email'];
 $topic = $_POST['topicss'];
-$message = $_POST['message'];
+// $message = $_POST['message'];
 $response = $_POST['response'];
 
 
@@ -123,7 +123,7 @@ file_put_contents($file_email, 'email'.$email);
 
 file_put_contents($file_topicss, 'topic'.$topic);
 
-file_put_contents($file_message, 'message'.$message);
+// file_put_contents($file_message, 'message'.$message);
 
 file_put_contents($file_response, 'response'.$response);
 
