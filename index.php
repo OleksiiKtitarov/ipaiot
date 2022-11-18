@@ -53,7 +53,7 @@
             $lines = file($file);//file in to an array
 //             var_dump($lines);
 
-            $pieces = explode(" ", $file);
+            $pieces = explode(',', $lines);
 
 //             print_r($pieces[1]);
             echo("Last entered information 4 :\n".$pieces);
