@@ -5,7 +5,6 @@
     <title>All articles</title>
     <link rel="stylesheet" href="screenStyle_php.css">
 
-    <link rel="shortcut icon" href="fig/T.svg" type="image/x-icon">
 </head>
 <body>
 
@@ -51,13 +50,35 @@
             <?
             $file = 'result.txt';
             $lines = file($file);//file in to an array
-//             var_dump($lines);
 
-//             $pieces = explode(',', $lines);
+<!--            echo("Last entered information 4 :\n".file_get_contents($file));-->
 
-//             print_r($pieces[1]);
-            echo("Last entered information 4 :\n".file_get_contents($file));
-//             echo("Last entered information 4 :\n".file_get_contents($file));
+
+            $file_nick = 'nick.txt';
+            $lines_nick = file($file_nick);//file in to an array
+
+            echo("Last entered information 4 :\n".file_get_contents($file_nick));
+
+            $file_name = 'name.txt';
+            $lines_name = file($file_name);//file in to an array
+
+            $file_surname = 'surname.txt';
+            $lines_surname = file($file_surname);//file in to an array
+
+            $file_number = 'number.txt';
+            $lines_number = file($file_number);//file in to an array
+
+            $file_email = 'email.txt';
+            $lines_email = file($file_email);//file in to an array
+
+            $file_topicss = 'topicss.txt';
+            $lines_topicss = file($file_topicss);//file in to an array
+
+            $file_message = 'message.txt';
+            $lines_message = file($file_message);//file in to an array
+
+            $file_response = 'response.txt';
+            $lines_response = file($file_response);//file in to an array
             ?>
         </div>
     </div>
@@ -78,12 +99,23 @@ $message = $_POST['message'];
 $response = $_POST['response'];
 
 
+file_put_contents($file_nick, '$nick');
 
-// $fruits = array($nick, $name, $surname, $topicss);
-// 
-                           
-// array_push(array, variable);
-                           
+file_put_contents($file_name, '$name');
+
+file_put_contents($file_surname, '$surname');
+
+file_put_contents($file_number, '$number');
+
+file_put_contents($file_email, '$email');
+
+file_put_contents($file_topic, '$topic');
+
+file_put_contents($file_message, '$message');
+
+file_put_contents($file_response, '$response');
+
+
 file_put_contents($file, 'nick:'.$nick.' name:'.$name.' surname:'.$surname.' topic:'.$topic.' number:'.$number.' mail:'.$email.' response:'.$response);
 // file_put_contents($file,$fruits);
 
