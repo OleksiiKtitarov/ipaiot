@@ -86,10 +86,13 @@ $response = $_POST['response'];
 
 
 
-$fruits = array($nick, $name, $surname, $topicss);
-
-<!--file_put_contents($file, $nick.' '.$name.' '.$surname.' '.$topic.' '.$number.' '.trim(email . "\n").' '.$response);-->
-file_put_contents($file,$fruits);
+// $fruits = array($nick, $name, $surname, $topicss);
+// 
+                           
+// array_push(array, variable);
+                           
+file_put_contents($file, $nick.' '.$name.' '.$surname.' '.$topic.' '.$number.' '.$email.' '.$response);
+// file_put_contents($file,$fruits);
 
 // show the $name and $email
 
