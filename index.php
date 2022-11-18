@@ -64,6 +64,8 @@
             $file_name = 'name.txt';
             $lines_name = file($file_name);//file in to an array
 
+            echo("Last entered information 5 :\n".file_get_contents($file_name));            
+                           
             $file_surname = 'surname.txt';
             $lines_surname = file($file_surname);//file in to an array
 
