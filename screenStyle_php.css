@@ -36,6 +36,8 @@ html, body{
     margin-top: 20px;
     display:flex;
     justify-content: center;
+    /*padding-left: 50px;*/
+    /*padding-right: 50px;*/
 }
 
 .box-shadow{
@@ -155,6 +157,7 @@ html, body{
     margin-bottom: 20px;
     outline: none;
     border-bottom: 1px solid grey;
+    width: 183px;
 }
 
 
@@ -207,6 +210,22 @@ html, body{
     /*border-bottom: 1px solid grey;*/
 }
 
+.last_response{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.article_news_last_response{
+    /*width: 80%;*/
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+
+}
 
 /*.main_css{*/
 /*    flex-direction: column;*/
@@ -236,5 +255,9 @@ html, body{
     }
     .mustache_p_responses{
         font-size: calc(2px + 0.5vw);
+    }
+    .form_input{
+        width: 60%;
+        height : auto;
     }
 }
