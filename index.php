@@ -53,10 +53,10 @@
             $lines = file($file);//file in to an array
 //             var_dump($lines);
 
-            $pieces = explode(',', $lines);
+//             $pieces = explode(',', $lines);
 
 //             print_r($pieces[1]);
-            echo("Last entered information 4 :\n".$pieces);
+            echo("Last entered information 4 :\n". $lines;
 //             echo("Last entered information 4 :\n".file_get_contents($file));
             ?>
         </div>
