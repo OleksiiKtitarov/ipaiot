@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>All articles</title>
-    <link rel="stylesheet" href="screenStyle_php.css">
+    <link rel="stylesheet" href="screenStyle_php1.css">
 
 </head>
 <body>
@@ -44,9 +44,18 @@
 </div>
 
 
-<div class=article_news">
+<div class=article_news_last_response" style="padding-left: 5%;
+    padding-right: 5%;">
     <div class="box-shadow">
-        <div>
+        <div class="last_response">
+<!--            <p>Test</p>-->
+<!--            <p>adasd adadsa</p>-->
+<!--            <p>phone: +380980706752 <br>email:alex02072003@gmail.com</p>-->
+<!--            <p>Topic - Page trouble</p>-->
+<!--            <p>-->
+<!--                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in massa ac risus molestie faucibus. Maecenas mollis libero ut posuere scelerisque. Aliquam ipsum purus, accumsan eget massa in, auctor sollicitudin ante. Aliquam tempor sodales lacus. Aliquam iaculis posuere tellus non auctor. Aliquam erat volutpat. Ut at fringilla nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec fringilla massa lacus, euismod lacinia nibh tincidunt eu. Proin vitae interdum est, eget elementum augue. Duis elit elit, sagittis non est ac, scelerisque semper lectus. Aliquam fermentum consequat metus sit amet varius. Nam dui elit, posuere sed ipsum in, auctor vehicula.-->
+<!--            </p>-->
+            
             <?
             $file = 'result.txt';
             $lines = file($file);//file in to an array
@@ -70,20 +79,20 @@
             echo " ".file_get_contents($file_name)."      ".file_get_contents($file_surname)."<br>\n";
 
 
-//            echo " ".file_get_contents($file_surname)."<br>\n";
+            //            echo " ".file_get_contents($file_surname)."<br>\n";
 
             $file_number = 'number.txt';
             $lines_number = file($file_number);//file in to an array
-//            echo " ".file_get_contents($file_number)."<br>\n";
+            //            echo " ".file_get_contents($file_number)."<br>\n";
 
             $file_email = 'email.txt';
             $lines_email = file($file_email);//file in to an array
 
             echo " ".file_get_contents($file_number)."      ".file_get_contents($file_email)."<br>\n";
 
-//            $file_email = 'email.txt';
-//            $lines_email = file($file_email);//file in to an array
-//            echo " ".file_get_contents($file_email)."<br>\n";
+            //            $file_email = 'email.txt';
+            //            $lines_email = file($file_email);//file in to an array
+            //            echo " ".file_get_contents($file_email)."<br>\n";
 
             $file_topicss = 'topicss.txt';
             $lines_topicss = file($file_topicss);//file in to an array
