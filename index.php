@@ -47,22 +47,15 @@
 
 <div class=article_news">
     <div class="box-shadow">
-                           
-                           $pieces = explode(" ", $pizza);
-                            echo $pieces[0]; // piece1
-                            echo $pieces[1]; // piece2
-                           
-                           
-                           
         <div>
             <?
             $file = 'result.txt';
             $lines = file($file);//file in to an array
-            var_dump($lines);
+//             var_dump($lines);
 
-            $pieces = explode(" ", $lines);
+            $pieces = explode(" ", $file);
 
-            print_r($pieces[0]);
+            print_r($pieces[1]);
             echo("Last entered information 4 :\n".$pieces[1]);
 //             echo("Last entered information 4 :\n".file_get_contents($file));
             ?>
