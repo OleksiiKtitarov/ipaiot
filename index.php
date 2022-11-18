@@ -59,16 +59,16 @@
                            
 //             echo("Last entered information 3 :\n".file_get_contents($file));
                            
-            echo("Last entered information 4 :\n".file_get_contents($file_nick). PHP_EOL.);
+            echo "Last entered information 4 :\n".file_get_contents($file_nick)."<br>\n";
 
             $file_name = 'name.txt';
             $lines_name = file($file_name);//file in to an array
 
-            echo("Last entered information 5 :\n".file_get_contents($file_name). PHP_EOL.);            
+            echo "Last entered information 5 :\n".file_get_contents($file_name);            
                            
             $file_surname = 'surname.txt';
             $lines_surname = file($file_surname);//file in to an array
-            echo("Last entered information 6 :\n".file_get_contents($file_surname). PHP_EOL.);    
+            echo "Last entered information 6 :\n".file_get_contents($file_surname) ;    
             $file_number = 'number.txt';
             $lines_number = file($file_number);//file in to an array
 
