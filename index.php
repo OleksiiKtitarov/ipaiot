@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="buttons_form">
-                        <button type="submit" class="buttons_form_class" value="Submit" onclick='window.location.reload();'>Send</button>
+                        <button type="submit" class="buttons_form_class" value="Submit" onclick='reload()'>Send</button>
                     </div>
                 </div>
 
