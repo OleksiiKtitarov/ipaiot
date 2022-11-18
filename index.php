@@ -45,9 +45,9 @@
 </div>
 
 
-<div class=article_news">
+<div class=article_news" style="width: 40%">
     <div class="box-shadow">
-        <div class="opnFrm" style="width: 40%">
+        <div class="opnFrm">
             <?
             $file = 'result.txt';
             $lines = file($file);//file in to an array
