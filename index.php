@@ -49,7 +49,7 @@
     <div class="box-shadow">
         <div>
             <?
-//             $file = 'result.txt';
+            $file = 'result.txt';
             $lines = file($file);//file in to an array
             var_dump($lines);
 
