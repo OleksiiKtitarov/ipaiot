@@ -46,7 +46,7 @@
 
 <div class=article_news">
     <div class="box-shadow">
-        <div class="opnFrm">
+        <div>
             <?
             $file = 'result.txt';
             $lines = file($file);//file in to an array
@@ -118,9 +118,9 @@ $response = $_POST['response'];
 
 file_put_contents($file_nick, 'nickname: '.$nick);
 
-file_put_contents($file_name, ':'.$name);
+file_put_contents($file_name, ''.$name);
 
-file_put_contents($file_surname, ''.$surname);
+file_put_contents($file_surname, ' '.$surname);
 
 file_put_contents($file_number, ''.$number);
 
