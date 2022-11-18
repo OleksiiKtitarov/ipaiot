@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="buttons_form">
-                        <button type="submit" class="buttons_form_class" value="Submit" onclick='reload()'>Send</button>
+                        <button type="submit" class="buttons_form_class" value="Submit" onclick = "myfunction()" >Send</button>
                     </div>
                 </div>
 
@@ -151,7 +151,10 @@ header("Refresh:0");
 ?>
                                   
 <script>
-    location.reload();
+    function myfunction() 
+    {            
+        location.reload();
+    }
 </script>
 
 </body>
