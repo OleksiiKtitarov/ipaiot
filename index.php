@@ -7,7 +7,13 @@
 
 </head>
 <body>
-
+    
+<script>
+    function myfunction() 
+    {            
+        location.reload();
+    }
+</script>
 
 <div class="article_news">
 
@@ -150,12 +156,7 @@ header("Refresh:0");
 
 ?>
                                   
-<script>
-    function myfunction() 
-    {            
-        location.reload();
-    }
-</script>
+
 
 </body>
 </html>
