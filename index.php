@@ -88,7 +88,7 @@ file_put_contents($file, 'nick:'.$nick.' name:'.$name.' surname:'.$surname.' top
 // file_put_contents($file,$fruits);
 
 // show the $name and $email
-
+header("Refresh:0");
 
 ?>
 
