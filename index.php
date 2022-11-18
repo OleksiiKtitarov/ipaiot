@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>All articles</title>
-    <link rel="stylesheet" href="screenStyle_php1.css">
+    <link rel="stylesheet" href="screenStyle_php.css">
 
 </head>
 <body>
