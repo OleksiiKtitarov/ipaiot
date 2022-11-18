@@ -103,7 +103,7 @@ $message = $_POST['message'];
 $response = $_POST['response'];
 
 
-file_put_contents($file_nick, '$nick');
+file_put_contents($file_nick, 'nick:'.$nick);
 
 file_put_contents($file_name, '$name');
 
