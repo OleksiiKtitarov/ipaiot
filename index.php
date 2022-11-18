@@ -55,8 +55,8 @@
 
             $pieces = explode(" ", $file);
 
-            print_r($pieces[1]);
-            echo("Last entered information 4 :\n".$pieces[1]);
+//             print_r($pieces[1]);
+            echo("Last entered information 4 :\n".$pieces);
 //             echo("Last entered information 4 :\n".file_get_contents($file));
             ?>
         </div>
