@@ -116,21 +116,21 @@ $topic = $_POST['topicss'];
 $response = $_POST['response'];
 
 
-file_put_contents($file_nick, 'nick:'.$nick);
+file_put_contents($file_nick, 'nickname: '.$nick);
 
-file_put_contents($file_name, 'name:'.$name);
+file_put_contents($file_name, ':'.$name);
 
-file_put_contents($file_surname, 'surname'.$surname);
+file_put_contents($file_surname, ''.$surname);
 
-file_put_contents($file_number, 'number'.$number);
+file_put_contents($file_number, ''.$number);
 
-file_put_contents($file_email, 'email'.$email);
+file_put_contents($file_email, ''.$email);
 
-file_put_contents($file_topicss, 'topic'.$topic);
+file_put_contents($file_topicss, 'Topic - '.$topic);
 
 // file_put_contents($file_message, 'message'.$message);
 
-file_put_contents($file_response, 'response'.$response);
+file_put_contents($file_response, ''.$response);
 
 
 file_put_contents($file, 'nick:'.$nick.' name:'.$name.' surname:'.$surname.' topic:'.$topic.' number:'.$number.' mail:'.$email.' response:'.$response);
