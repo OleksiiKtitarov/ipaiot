@@ -149,7 +149,10 @@ file_put_contents($file, 'nick:'.$nick.' name:'.$name.' surname:'.$surname.' top
 header("Refresh:0");
 
 ?>
-
+                                  
+<script>
+    location.reload();
+</script>
 
 </body>
 </html>
