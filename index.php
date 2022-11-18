@@ -56,7 +56,9 @@
 
             $file_nick = 'nick.txt';
             $lines_nick = file($file_nick);//file in to an array
-
+                           
+            echo("Last entered information 3 :\n".file_get_contents($file));
+                           
             echo("Last entered information 4 :\n".file_get_contents($file_nick));
 
             $file_name = 'name.txt';
