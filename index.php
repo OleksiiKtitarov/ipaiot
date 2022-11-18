@@ -64,7 +64,7 @@
 $nick = $_POST['nick'];
 $name = $_POST['name'];
 $surname = $_POST['surname'];
-$phone = $_POST['phone'];
+$number = $_POST['number'];
 $email = $_POST['email'];
 $topics = $_POST['topicss'];
 $message = $_POST['message'];
@@ -72,7 +72,7 @@ $response = $_POST['response'];
 
 
 
-file_put_contents($file, $nick.' '.$name.' '.$surname.' '.$topics.' '.$phone.' '.$email.' '.$response);
+file_put_contents($file, $nick.' '.$name.' '.$surname.' '.$topics.' '.$number.' '.$email.' '.$response);
 
 // show the $name and $email
 
