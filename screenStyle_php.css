@@ -4,7 +4,7 @@ table, th, td {
 
 
 html, body{
-    margin: 1px;
+    margin: 0;
     padding: 0;
     background-color: #ffffff;
 
@@ -42,7 +42,10 @@ html, body{
 
 .box-shadow{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    width: 90%;
+    /*width: 90%;*/
+    /*padding-top: 10px;*/
+    /*padding-bottom: 10px;*/
+    /*padding-left: 20px;*/
     padding: 20px;
     border-radius: 40px;
 
@@ -68,53 +71,7 @@ html, body{
     /*padding-right: 10%;*/
     max-width: 80%;
 }
-.navbutt{
-    background-color: white;
-    padding: 10px;
-    margin:10px;
-    margin-left: 2%;
-    margin-right: 2%;
 
-    color: black;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    border: 1px solid mediumpurple;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    transition-duration: 500ms;
-}
-.navbutt:hover{
-    background-color: mediumpurple;
-    color: white;
-}
-.active{
-    background-color: mediumpurple;
-    color: white;
-}
-
-.topnav{
-
-    display: flex;
-    justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    border-radius: 40px;
-}
-.tab{
-    text-indent:38px;
-    margin-left: 2px;
-}
-
-
-@media (max-width: 600px) {
-    .topnav{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-
-    }
-}
 
 
 .opnFrm {
@@ -190,11 +147,7 @@ html, body{
     color: white;
 }
 
-.radiobutton_gender{
-    font-size: calc(2px + 1vw);
-    /*margin-left: 20px;*/
-    margin-right: 20px;
-}
+
 
 .datalist_topics{
     font-size: calc(2px + 1vw);
