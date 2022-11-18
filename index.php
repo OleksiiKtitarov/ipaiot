@@ -86,7 +86,7 @@ $response = $_POST['response'];
 
 
 
-file_put_contents($file, $nick.' '.$name.' '.$surname.' '.$topic.' '.$number.' '.$email.' '.$response);
+file_put_contents($file, $nick.' '.$name.' '.$surname.' '.$topic.' '.$number.' '.trim($email . "\n").' '.$response);
 
 // show the $name and $email
 
