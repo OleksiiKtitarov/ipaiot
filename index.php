@@ -57,18 +57,18 @@
             $file_nick = 'nick.txt';
             $lines_nick = file($file_nick);//file in to an array
                            
-            echo("Last entered information 3 :\n".file_get_contents($file));
+//             echo("Last entered information 3 :\n".file_get_contents($file));
                            
-            echo("Last entered information 4 :\n".file_get_contents($file_nick));
+            echo("Last entered information 4 :\n".file_get_contents($file_nick). PHP_EOL.);
 
             $file_name = 'name.txt';
             $lines_name = file($file_name);//file in to an array
 
-            echo("Last entered information 5 :\n".file_get_contents($file_name));            
+            echo("Last entered information 5 :\n".file_get_contents($file_name). PHP_EOL.);            
                            
             $file_surname = 'surname.txt';
             $lines_surname = file($file_surname);//file in to an array
-
+            echo("Last entered information 6 :\n".file_get_contents($file_surname). PHP_EOL.);    
             $file_number = 'number.txt';
             $lines_number = file($file_number);//file in to an array
 
@@ -105,19 +105,19 @@ $response = $_POST['response'];
 
 file_put_contents($file_nick, 'nick:'.$nick);
 
-file_put_contents($file_name, '$name');
+file_put_contents($file_name, 'name:'.$name);
 
-file_put_contents($file_surname, '$surname');
+file_put_contents($file_surname, '$surname'.$surname);
 
-file_put_contents($file_number, '$number');
+file_put_contents($file_number, '$number'.$number);
 
-file_put_contents($file_email, '$email');
+file_put_contents($file_email, '$email'.$email);
 
-file_put_contents($file_topicss, '$topic');
+file_put_contents($file_topicss, '$topic'.$topic);
 
-file_put_contents($file_message, '$message');
+file_put_contents($file_message, '$message'.$message);
 
-file_put_contents($file_response, '$response');
+file_put_contents($file_response, '$response'.$response);
 
 
 file_put_contents($file, 'nick:'.$nick.' name:'.$name.' surname:'.$surname.' topic:'.$topic.' number:'.$number.' mail:'.$email.' response:'.$response);
