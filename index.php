@@ -131,7 +131,7 @@ $topic = $_POST['topicss'];
 $response = $_POST['response'];
 
 
-file_put_contents($file_nick, 'nickname: '.$nick);
+file_put_contents($file_nick, ''.$nick);
 
 file_put_contents($file_name, ''.$name);
 
