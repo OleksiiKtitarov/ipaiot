@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>All articles</title>
+    <title>Response</title>
     <link rel="stylesheet" href="screenStyle_php.css">
 
 </head>
