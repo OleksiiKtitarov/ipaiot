@@ -60,7 +60,7 @@ if(isset($_POST['submit'])){
   file_put_contents('txt/emails.txt', $_POST['email']);
   file_put_contents('txt/topicss.txt', $_POST['topic']);
   file_put_contents('txt/responses.txt', $_POST['response']);
-  file_put_contents($file, 'nick:'.$nick.' name:'.$name.' surname:'.$surname.' topic:'.$topic.' number:'.$number.' mail:'.$email.' response:'.$response);
+  file_put_contents('txt/result.txt', 'nick:'.$nick.' name:'.$name.' surname:'.$surname.' topic:'.$topic.' number:'.$number.' mail:'.$email.' response:'.$response);
   clearstatcache();
   header("Refresh:0");
 }
