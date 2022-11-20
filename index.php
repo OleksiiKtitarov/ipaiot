@@ -44,7 +44,8 @@
             <?php
               echo file_get_contents('txt/nicks.txt')."<br>\n";
               echo file_get_contents('txt/names.txt').' '.file_get_contents('txt/surnames.txt')."<br>\n";
-              echo file_get_contents('txt/numbers.txt').' '.file_get_contents('txt/emails.txt')."<br>\n";                                  
+              echo file_get_contents('txt/numbers.txt')."<br>\n";
+              echo file_get_contents('txt/emails.txt')."<br>\n";                                  
               echo file_get_contents('txt/topicss.txt')."<br>\n";
               echo file_get_contents('txt/responses.txt')."<br>\n";
             ?>
