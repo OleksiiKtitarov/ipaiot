@@ -28,7 +28,7 @@
                         <textarea name="response" id="response" placeholder="Your response"></textarea><br>
                     </div>
                     <div class="buttons_form">
-                        <a href=”javascript:history.go(0)”><button type="submit" name="submit" class="buttons_form_class" value="Submit" >Send</button></a>
+                        <button type="submit" name="submit" class="buttons_form_class" value="Submit" >Send</button>
                         <a href=”javascript:history.go(0)”><button type="rest" class="buttons_form_class" value="Reset">Reset</button></a>
                     </div>
                 </div>
@@ -62,6 +62,16 @@ if(isset($_POST['submit'])){
   clearstatcache();
   header("Refresh:0");
 }
+if ($this->session->has_userdata('msg')) {
+  $msg = $this->session->userdata('msg');
+  $this->session->unset_userdata('msg');
+  if (count($msg) && strlen($msg['msg']) > 0)
+  {
+    echo '<div class="alert alert-' .$msg['type'] .' alert-dismissible" role="alert" style="margin: 20px;"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'.$msg['msg'].'</div>';
+  }
+}
+                                  
+                                  
 ?>
 </body>
 </html>
