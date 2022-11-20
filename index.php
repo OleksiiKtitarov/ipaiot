@@ -11,7 +11,7 @@
     <div class="box-shadow">
         <div style="">
             <h1 style="text-align: center">Leave your response</h1>
-            <form id="opnFrm" class="opnFrm" method="post">
+            <form id="opnFrm" class="opnFrm">
                 <div>
                     <input type="text" name="nick" id="nick" placeholder="Nick" class="form_input"><br>
                     <input type="text" name="name" id="name" placeholder="Name" class="form_input"><br>
