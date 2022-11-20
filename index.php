@@ -42,24 +42,25 @@
     <div class="box-shadow">
         <div class="last_response">
             <?php
-              echo file_get_contents('txt1/nicks.txt')."<br>\n";
-              echo file_get_contents('txt1/names.txt').' '.file_get_contents('txt1/surnames.txt')."<br>\n";
-              echo file_get_contents('txt1/numbers.txt').' '.file_get_contents('txt1/emails.txt')."<br>\n";                                  
-              echo file_get_contents('txt1/topics.txt')."<br>\n";
-              echo file_get_contents('txt1/responses.txt')."<br>\n";
+              echo file_get_contents('txt/nicks.txt')."<br>\n";
+              echo file_get_contents('txt/names.txt').' '.file_get_contents('txt/surnames.txt')."<br>\n";
+              echo file_get_contents('txt/numbers.txt').' '.file_get_contents('txt/emails.txt')."<br>\n";                                  
+              echo file_get_contents('txt/topics.txt')."<br>\n";
+              echo file_get_contents('txt/responses.txt')."<br>\n";
             ?>
         </div>
     </div>
 </div>
 <?php
 if(isset($_POST['submit'])){
-  file_put_contents('txt1/nicks.txt', $_POST['nick']);
-  file_put_contents('txt1/names.txt', $_POST['name']);
-  file_put_contents('txt1/surnames.txt', $_POST['surname']);
-  file_put_contents('txt1/numbers.txt', $_POST['number']);
-  file_put_contents('txt1/emails.txt', $_POST['email']);
-  file_put_contents('txt1/topicss.txt', $_POST['topic']);
-  file_put_contents('txt1/responses.txt', $_POST['response']);
+  file_put_contents('txt/nicks.txt', $_POST['nick']);
+  file_put_contents('txt/names.txt', $_POST['name']);
+  file_put_contents('txt/surnames.txt', $_POST['surname']);
+  file_put_contents('txt/numbers.txt', $_POST['number']);
+  file_put_contents('txt/emails.txt', $_POST['email']);
+  file_put_contents('txt/topicss.txt', $_POST['topic']);
+  file_put_contents('txt/responses.txt', $_POST['response']);
+  file_put_contents($file, 'nick:'.$nick.' name:'.$name.' surname:'.$surname.' topic:'.$topic.' number:'.$number.' mail:'.$email.' response:'.$response);
   clearstatcache();
   header("Refresh:0");
 }
