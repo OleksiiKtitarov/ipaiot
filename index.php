@@ -27,13 +27,13 @@
                     <div class="response_form">
                         <textarea name="response" id="response" placeholder="Your response"></textarea><br>
                     </div>
-                    
+                        <div class="buttons_form">
+                            <button type="submit" name="submit" class="buttons_form_class" value="Submit" >Send</button>
+                            <a href=”javascript:history.go(0)”><button type="rest" class="buttons_form_class" value="Reset">Reset</button></a>
+                        </div>
                 </div>
             </form>
-            <div class="buttons_form">
-                        <button type="submit" name="submit" class="buttons_form_class" value="Submit" >Send</button>
-                        <a href=”javascript:history.go(0)”><button type="rest" class="buttons_form_class" value="Reset">Reset</button></a>
-                    </div>
+            
         </div>
     </div>
 </div>
