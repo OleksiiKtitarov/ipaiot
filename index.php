@@ -53,13 +53,13 @@
 </div>
 <?php
 if(isset($_POST['submit'])){
-  file_put_contents('txt/nicks.txt', $_POST['nick']);
-  file_put_contents('txt/names.txt', $_POST['name']);
-  file_put_contents('txt/surnames.txt', $_POST['surname']);
-  file_put_contents('txt/numbers.txt', $_POST['number']);
-  file_put_contents('txt/emails.txt', $_POST['email']);
-  file_put_contents('txt/topicss.txt', $_POST['topic']);
-  file_put_contents('txt/responses.txt', $_POST['response']);
+  file_put_contents('txt1/nicks.txt', $_POST['nick']);
+  file_put_contents('txt1/names.txt', $_POST['name']);
+  file_put_contents('txt1/surnames.txt', $_POST['surname']);
+  file_put_contents('txt1/numbers.txt', $_POST['number']);
+  file_put_contents('txt1/emails.txt', $_POST['email']);
+  file_put_contents('txt1/topicss.txt', $_POST['topic']);
+  file_put_contents('txt1/responses.txt', $_POST['response']);
   clearstatcache();
   header("Refresh:0");
 }
