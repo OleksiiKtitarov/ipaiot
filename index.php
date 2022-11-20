@@ -57,7 +57,7 @@ if(isset($_POST['submit'])){
   file_put_contents('txt/surnames.txt', $_POST['surname']);
   file_put_contents('txt/numbers.txt', $_POST['number']);
   file_put_contents('txt/emails.txt', $_POST['email']);
-  file_put_contents('txt/topics.txt', $_POST['topic']);
+  file_put_contents('txt/topicss.txt', $_POST['topic']);
   file_put_contents('txt/responses.txt', $_POST['response']);
   clearstatcache();
   header("Refresh:0");
