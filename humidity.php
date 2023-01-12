@@ -10,7 +10,7 @@
 <div class="article_news">
     <div class="box-shadow">
         <div style="">
-            <h1 style="text-align: center">Leave your response</h1>
+            <h1 style="text-align: center">Humidity</h1>
             <form id="opnFrm" class="opnFrm" method="post">
                 <div>
                     <input type="text" name="humidity" id="humidity" placeholder="Humidity"  disabled="disabled" class="form_input"><br>
